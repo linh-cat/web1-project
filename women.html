@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
+    <link rel="stylesheet" href="css/women.css">
+    <title>FASHION</title>
+  </head>
+  <body>
+  <section class="header" >
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">FASHION SHOP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="women.html" class="nav-link">Women</a></li>
+            <li class="nav-item"><a href="men.html" class="nav-link">Men</a></li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <div class="header-btn"> 
+              <input type="search" placeholder="Search" class="form-control mr-sm-2" aria-label="Search" id="search-box">  
+              <button class="btn btn-outline-dark my-2 my-sm-0 mr-1" type="submit" id="search">SEARCH</button>
+            </div>
+          </form>
+          <div class="nav-right-bag">
+            <a href="cart.html" class="btn btn-outline-dark my-2 my-sm-0" id="cart"><i class="fa fa-shopping-bag"></i></a>
+            <a href="login.html" class="btn btn-outline-dark my-2 my-sm-0"><i class="fa fa-user"></i></a>
+            <a href="cart.html"><p id="hello" class="btn btn-outline-dark my-2 my-sm-0">No Account</p></a>
+            <p class="btn btn-outline-danger my-2 my-sm-0" id="log_out" onclick="removeKey()">LOG-OUT</p>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <section class="page-section-end">
+    <div class="container">
+        <div class="row product-top">
+          <div class="col-md-3">
+                <div class="sidebar-bg">
+                    <div class="vertical-filters-filters header-container">
+                        <span class="header-title">Filter</span>
+                        <span class="header-clearAllBtn">Clear All</span>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" id="customControlAutosizing" class="custom-control-input" >
+                            <label class="custom-control-label" for="customControlAutosizing">Men</label>
+                        </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" id="customControlAutosizing1" class="custom-control-input" >
+                            <label class="custom-control-label" for="customControlAutosizing1">Women</label>
+                    </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" id="customControlAutosizing3" class="custom-control-input" >
+                            <label class="custom-control-label" for="customControlAutosizing3">Boys</label>
+                        </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" id="customControlAutosizing4" class="custom-control-input" >
+                            <label class="custom-control-label" for="customControlAutosizing4">Girls</label>
+                        </div>
+                    </div>
+                    <div class="shop-title"><span>Brand</span></div>
+                    <div class="vertical-filters-filters top-listing">
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" id="customControlAutosizing5" class="custom-control-input" >
+                                <label class="custom-control-label" for="customControlAutosizing5">Puma <Small>(2241)</Small></label>
+                            </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" id="customControlAutosizing6" class="custom-control-input" >
+                                <label class="custom-control-label" for="customControlAutosizing6">Lee <Small>(150)</Small></label>
+                            </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" id="customControlAutosizing6" class="custom-control-input" >
+                                <label class="custom-control-label" for="customControlAutosizing6">Jack & Jones <Small>(70)</Small></label>
+                            </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" id="customControlAutosizing7" class="custom-control-input" >
+                                <label class="custom-control-label" for="customControlAutosizing7">Luxurazy <Small>(10)</Small></label>
+                            </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" id="customControlAutosizing8" class="custom-control-input" >
+                                <label class="custom-control-label" for="customControlAutosizing8">Peter England Casual <Small>(60)</Small></label>
+                            </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" id="customControlAutosizing9" class="custom-control-input" >
+                                <label class="custom-control-label" for="customControlAutosizing9">BlackBerrys <Small>(196)</Small></label>
+                            </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" id="customControlAutosizing10" class="custom-control-input" >
+                            <label class="custom-control-label" for="customControlAutosizing10">Blazers & Coats<Small>(60)</Small></label>
+                        </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" id="customControlAutosizing11" class="custom-control-input" >
+                            <label class="custom-control-label" for="customControlAutosizing11">Allen Solly <Small>(60)</Small></label>
+                        </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" id="customControlAutosizing12" class="custom-control-input" >
+                            <label class="custom-control-label" for="customControlAutosizing12">Duke <Small>(60)</Small></label>
+                        </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" id="customControlAutosizing13" class="custom-control-input" >
+                            <label class="custom-control-label" for="customControlAutosizing13">Raymond <Small>(130)</Small></label>
+                        </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" id="customControlAutosizing14" class="custom-control-input" >
+                            <label class="custom-control-label" for="customControlAutosizing14">SPYKAR <Small>(10)</Small></label>
+                        </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" id="customControlAutosizing15" class="custom-control-input" >
+                            <label class="custom-control-label" for="customControlAutosizing15">U.S Polo <Small>(45)</Small></label>
+                        </div>
+                    </div>
+                    <div class="shop-title"><span>PRICE</span></div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" id="customControlAutosizing16" class="custom-control-input" >
+                            <label class="custom-control-label" for="customControlAutosizing16">$18 to $50 <Small>(2500)</Small></label>
+                        </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" id="customControlAutosizing17" class="custom-control-input" >
+                            <label class="custom-control-label" for="customControlAutosizing17">$50 to $500 <Small>(1500)</Small></label>
+                        </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" id="customControlAutosizing18" class="custom-control-input" >
+                            <label class="custom-control-label" for="customControlAutosizing18">$500 to $1500 <Small>(1000)</Small></label>
+                        </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" id="customControlAutosizing19" class="custom-control-input" >
+                            <label class="custom-control-label" for="customControlAutosizing19">$1500 to $3000 <Small>(500)</Small></label>
+                        </div>
+                    </div>
+                    <div class="shop-title"><span>COLOR</span></div>
+                    <div class="vertical-filters-filters top-listing">
+                        <ul class="color-listing">
+                            <li>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing20">
+                                    <label for="customControlAutosizing20" class="custom-control-label">
+                                        <span data-colorhex="navy blue" class="colour-label colourdisplay bg-navy-blue"></span>Navy blue
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing21">
+                                    <label for="customControlAutosizing21" class="custom-control-label">
+                                        <span data-colorhex="navy black" class="colour-label colourdisplay bg-navy-black"></span>Black
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing22">
+                                        <label for="customControlAutosizing22" class="custom-control-label">
+                                            <span data-colorhex="navy grey" class="colour-label colourdisplay bg-navy-grey"></span>Grey
+                                        </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing23">
+                                        <label for="customControlAutosizing23" class="custom-control-label">
+                                            <span data-colorhex="navy peach" class="colour-label colourdisplay bg-navy-peach"></span>Peach
+                                        </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing24">
+                                    <label for="customControlAutosizing24" class="custom-control-label">
+                                        <span data-colorhex="navy pink" class="colour-label colourdisplay bg-navy-pink"></span>Pink
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing25">
+                                    <label for="customControlAutosizing25" class="custom-control-label">
+                                        <span data-colorhex="navy red" class="colour-label colourdisplay bg-navy-red"></span>Red
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing26">
+                                    <label for="customControlAutosizing226" class="custom-control-label">
+                                        <span data-colorhex="navy coral" class="colour-label colourdisplay bg-navy-coral"></span>Coral
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing27">
+                                    <label for="customControlAutosizing27" class="custom-control-label">
+                                        <span data-colorhex="navy maroon" class="colour-label colourdisplay bg-navy-maroon"></span>Maroon
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="shop-title"><span>DISCOUNT RANGE</span></div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="customControlAutosizing28">
+                            <label for="customControlAutosizing28" class="custom-control-label">10% and above</label>
+                        </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="customControlAutosizing20">
+                            <label for="customControlAutosizing20" class="custom-control-label">10% and above</label>
+                        </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="customControlAutosizing29">
+                            <label for="customControlAutosizing29" class="custom-control-label">20% and above</label>
+                        </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="customControlAutosizing30">
+                            <label for="customControlAutosizing30" class="custom-control-label">30% and above</label>
+                        </div>
+                    </div>
+                    <div class="vertical-filters-filters top-listing">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="customControlAutosizing20">
+                            <label for="customControlAutosizing20" class="custom-control-label">40% and above</label>
+                        </div>
+                    </div>
+                </div>
+          </div>
+          <div class="col-md-9">
+            <div class="row product-top" id="list-products-women">
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <div class="main-footer">          
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <h5 class="footer-title">CUSTOM SERVICE</h5>
+              <ul class="footer-link">
+                <li><a href="#">Contact Us.</a></li>
+                <li><a href="#">Track Order.</a></li>
+                <li><a href="#">Return Order.</a></li>
+                <li><a href="#">Cancel Order.</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <h5 class="footer-title">COMPANY</h5>
+              <ul class="footer-link">
+                <li><a href="#">About Us.</a></li>
+                <li><a href="#">Term & Conditions.</a></li>
+                <li><a href="#">Privacy Policy.</a></li>
+                <li><a href="#">Blog.</a></li>
+              </ul>              
+            </div>
+            <div class="col-sm-3">
+              <h5 class="footer-title">CONNECT WITH US</h5>
+              <ul class="footer-link">
+                <li><a href="#"><i class="fab fa-facebook-f"></i>   4.5M People Like This.</a></li>
+                <li><a href="#">Track Order.</a></li>
+                <li><a href="#">Return Order.</a></li>
+                <li><a href="#">Cancel Order.</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <div class="newsletter_box">
+                <h5 class="footer-title">KEEP UP TO DATE</h5>
+                <div class="input-group mb-3">
+                  <input type="text"  class="form-control" placeholder="Enter Email Id" aria-label="Enter Email Id" aria-describedby="button-addon2">
+                  <div class="footer-btn">
+                    <button class="btn btn-outline-dark" type="button" id="button-addon2">Subscribe</button>
+                  </div>
+                </div>
+                <div class="wpb_wraapper">
+                  <div class="block-social social-footer">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-camera"></i></a>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row second-line">
+            <div class="col-md-3">
+              <ul class="footer-link">
+                <li><a href="#"><i class="fas fa-undo-alt"></i> 15 Days Return Policy.</a></li>
+                <li><a href="#"><i class="fas fa-hand-holding-usd"></i> Cash On Delivery*.</a></li>
+                <li><a href="#"><i class="fas fa-truck"></i> Pay Online & Get Free Shipping.</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5 class="footer-title-2">DOWNLOAD THE APP</h5>
+              <ul class="app">
+                <li><a href="#"><i class="fab fa-app-store-ios"></i></a>   App Store.</li>
+                <li><a href="#"><i class="fab fa-google-play"></i></a>   Google Play.</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5 class="footer-title-2">100%  SECURE PAYMENT</h5>
+              <ul class="payment">
+                <li><a href="#"><i class="fab fa-cc-visa"></i></a></li>
+                <li><a href="#"><i class="fab fa-apple-pay"></i></a></li>
+                <li><a href="#"><i class="fab fa-cc-stripe"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3 class="footer-title-3">FASHION SHOP</h3>
+              <ul class="footer-link">
+                <li class="text-white">© 2019 www.fashionshop.com
+                  All rights reserved.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  </div>
+  <script src="js/women/variables.js"></script>
+  <script src="js/home/variables.js"></script>
+  <script src="js/women/functions.js"></script>
+  <script src="js/women/index.js"></script>
+  <script src="js/header/functions.js"></script>
+  <script src="js/header/index.js"></script>
+  <script src="js/submit/submit.js"></script>
+    
+    <script src="js/js/bootstrap.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</body>
+</html>

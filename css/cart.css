@@ -1,0 +1,215 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    padding-top: 86px;
+    margin: 0;
+    padding: 0;
+    border: 0;   
+}
+.dropdown-menu a:hover{
+    background-color: #343a40;
+}
+.main-footer{
+    padding: 70px 0;
+    background-color: #343a40;
+    font-size: 17px;
+    gap: normal;
+    text-align: left;
+    height: 800px;
+}
+.newsletter_box .btn{
+    border: 2px solid #fff;
+    color: #fff;
+    margin-left: 10px;
+}
+.footer-link a{
+    color: #ffffff;
+}
+.footer-title{
+    color: #f47258;
+    margin-bottom: 50px;
+}
+.footer-link {
+    list-style: none;
+    line-height: 2;
+    position: absolute;
+    left: -20px;
+}
+.social-footer>a{
+    width: 40px; 
+    height: 40px;
+    border: 3px solid #fff;
+    font-size: 17px;
+    border-radius: 50%;
+    color: rgb(124, 124, 124);
+    display: inline-block;
+    gap: normal;
+    line-height: 34px;
+    margin: 0 8px 0 0 ;
+    text-align: center;
+}
+.social-footer a i{
+    color:#ffffff;
+    display: inline-block;
+    gap: normal;
+    line-height: 16px;
+    text-align: center;
+    z-index: 99;
+}
+.input-group .form-control{
+    width: 120px;
+    height: 38px;
+    border-style: solid;
+    border-width: 1px;
+    line-height: 21px;
+    padding: 6px 12px;
+}
+
+.social-footer a:hover{
+    background-color: #f47258;
+    transition: 0.5s;
+}
+.second-line{
+    padding-top: 60px;
+}
+.footer-title-2{
+    color: #f47258;
+}
+.app{
+    list-style: none;
+    position: absolute;
+    left: -24px;
+    top: 40px;
+}
+
+.app a{
+    color: #fff;
+    font-size: 20px;
+}
+.app li{
+    color: #fff;
+}
+.payment{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    left: -37px;
+    top: 45px;
+}
+.payment li a i{
+    font-size: 40px;
+    margin: 10px;
+    color: #fff;
+}
+.footer-title-3{
+    color: #fff;
+}
+.portfolio-item .card .card-title a{
+    color: #272624;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.page-section{
+    padding: 150px 0 0;
+}
+.space-bottom{
+    padding: 15px;
+    margin-top: 100px;
+}
+.cart-detail{
+    border: 1px solid #ccc;
+    padding: 30px;
+    line-height: 25px;
+}
+.cart-title{
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 10px 0;
+    display: flow-root;
+}
+.cart-title small{
+    color: rgb(0, 0, 0, .4);
+    line-height: 22px;
+}
+.pull-left{
+    float: left !important;
+}
+.pull-right{
+    float: right !important;
+}
+.total-pay{
+    font-weight: 700;
+    color: #212529;
+}
+.card-img-1{
+    width: 94%;
+    border-radius: calc(.25rem - 1px);
+    float: left;
+    margin: 1rem 0 0 1rem;
+    border: 1px solid #ccc;
+    padding: 6px;
+}
+.shopper{
+    font-size: 11px;
+    border: 2px solid #e0e0e0;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.cart-product-price{
+    margin-left: 20px;
+}
+.cart-product-price p {
+    margin-top: 9px;
+    font-size: 17px;
+    color: #212529;
+    margin-bottom: 8px;
+}
+.cart-product-price small{
+    padding: 0 7px 0 0;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+}
+.cart-product-price .product-remove{
+    margin-top: 35px !important;
+    margin-bottom: 0 !important;
+}
+.product-remove{
+    border-top: 1px solid #ccc;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.product-remove a{
+    color: #f47258;
+}
+.discount-off{
+    color: #f47258;
+}
+.discount-off span{
+    text-decoration: line-through;
+    color: #212529;
+    margin: 5px;
+}
+.discount-off a{
+    text-decoration: none;
+    color: #212529;
+}
+.cart-bill h6{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 22px 0 22px 0;
+}
+.cart-bill p{
+    margin: 25px 0;
+    margin-top: 0;
+}
+hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgb(0, 0, 0, .1);
+}
+.text-infor{
+    color: #f47258 !important;
+}

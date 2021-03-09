@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
+    <link rel="stylesheet" href="css/cart.css">
+    <title>CART</title>
+  </head>
+  <body>
+    <section class="header" >
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">FASHION SHOP</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="women.html" class="nav-link">Women</a></li>
+              <li class="nav-item"><a href="men.html" class="nav-link">Men</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <div class="header-btn"> 
+                <input type="search" placeholder="Search" class="form-control mr-sm-2" aria-label="Search" id="search-box">  
+                <button class="btn btn-outline-dark my-2 my-sm-0 mr-1" type="submit" id="search">SEARCH</button>
+              </div>
+            </form>
+            <div class="nav-right-bag">
+              <a href="cart.html" class="btn btn-outline-dark my-2 my-sm-0" id="cart"><i class="fa fa-shopping-bag"></i></a>
+              <a href="login.html" class="btn btn-outline-dark my-2 my-sm-0"><i class="fa fa-user"></i></a>
+              <a href="cart.html"><p id="hello" class="btn btn-outline-dark my-2 my-sm-0">No Account</p></a>
+              <p class="btn btn-outline-danger my-2 my-sm-0" id="log_out" onclick="removeKey()">LOG-OUT</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="page-section space-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="cart-detail mt-4">
+                        <div class="cart-title">
+                            <h6 class="pull-left">My Bag <small id="cart-items"></small></h6>
+                            <h6 class="total-pay pull-right">Total <span id="total"></span></h6>
+                        </div>
+                        <div class="row" id="cart-products">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cart-bill" style="background-color: #fbfbfb; padding: 30px;">
+                        <span style="color: #f47258 !important;" >Have a Gift Code</span>
+                        <h6>Oder Summary</h6>
+                        <p>Bag Total(Inclusive of all taxes)</p><span class="pull-right" id="total_bag"></span>
+                        <p>Coins Worth</p><span class="pull-right" style="margin-top: 17px;">20%</span>
+                        <hr>
+                        <p class="text-infor">You Are Saving $240 on this order</p>
+                        <hr>
+                        <h5 style="font-size: 17px; font-weight: 600;">Payable Amount</h5>
+                        <div class="checkout-btn mt-4">
+                            <button type="button" class="btn btn-outline-primary btn-block">PROCEED TO CHECKOUT</button>
+                            <button type="button" class="btn btn-outline-success btn-block" id="order">ORDER</button>
+                            <button type="button" class="btn btn-outline-infor btn-block">HELP</button>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="main-footer">          
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <h5 class="footer-title">CUSTOM SERVICE</h5>
+                <ul class="footer-link">
+                  <li><a href="#">Contact Us.</a></li>
+                  <li><a href="#">Track Order.</a></li>
+                  <li><a href="#">Return Order.</a></li>
+                  <li><a href="#">Cancel Order.</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h5 class="footer-title">COMPANY</h5>
+                <ul class="footer-link">
+                  <li><a href="#">About Us.</a></li>
+                  <li><a href="#">Term & Conditions.</a></li>
+                  <li><a href="#">Privacy Policy.</a></li>
+                  <li><a href="#">Blog.</a></li>
+                </ul>              
+              </div>
+              <div class="col-sm-3">
+                <h5 class="footer-title">CONNECT WITH US</h5>
+                <ul class="footer-link">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i>   4.5M People Like This.</a></li>
+                  <li><a href="#">Track Order.</a></li>
+                  <li><a href="#">Return Order.</a></li>
+                  <li><a href="#">Cancel Order.</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <div class="newsletter_box">
+                  <h5 class="footer-title">KEEP UP TO DATE</h5>
+                  <div class="input-group mb-3">
+                    <input type="text"  class="form-control" placeholder="Enter Email Id" aria-label="Enter Email Id" aria-describedby="button-addon2">
+                    <div class="footer-btn">
+                      <button class="btn btn-outline-dark" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                  </div>
+                  <div class="wpb_wraapper">
+                    <div class="block-social social-footer">
+                      <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fas fa-camera"></i></a>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row second-line">
+              <div class="col-md-3">
+                <ul class="footer-link">
+                  <li><a href="#"><i class="fas fa-undo-alt"></i> 15 Days Return Policy.</a></li>
+                  <li><a href="#"><i class="fas fa-hand-holding-usd"></i> Cash On Delivery*.</a></li>
+                  <li><a href="#"><i class="fas fa-truck"></i> Pay Online & Get Free Shipping.</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h5 class="footer-title-2">DOWNLOAD THE APP</h5>
+                <ul class="app">
+                  <li><a href="#"><i class="fab fa-app-store-ios"></i></a>   App Store.</li>
+                  <li><a href="#"><i class="fab fa-google-play"></i></a>   Google Play.</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h5 class="footer-title-2">100%  SECURE PAYMENT</h5>
+                <ul class="payment">
+                  <li><a href="#"><i class="fab fa-cc-visa"></i></a></li>
+                  <li><a href="#"><i class="fab fa-apple-pay"></i></a></li>
+                  <li><a href="#"><i class="fab fa-cc-stripe"></i></a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h3 class="footer-title-3">FASHION SHOP</h3>
+                <ul class="footer-link">
+                  <li class="text-white">© 2019 www.fashionshop.com
+                    All rights reserved.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src="js/home/variables.js"></script>
+    <script src="js/cart/functions.js"></script>
+    <script src="js/cart/index.js"></script>
+    <script src="js/header/functions.js"></script>
+    <script src="js/header/index.js"></script>
+    <script src="js/submit/submit.js"></script>
+
+    <script src="js/js/bootstrap.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</body>
+</html>
